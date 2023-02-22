@@ -1,6 +1,6 @@
 # Quickblox IOS SDK
 
-QuickBlox iOS SDK ([Quickblox Framework](https://github.com/QuickBlox/quickblox-ios-sdk/tree/master/Framework/Quickblox.xcframework))
+QuickBlox iOS SDK ([Quickblox Framework](https://github.com/QuickBlox/ios-quickblox-sdk/tree/master/Quickblox.xcframework))
 
 The [QuickBlox](https://quickblox.com) platform provides the QuickBlox iOS SDK is a software development kit that provides a set of tools and APIs to help iOS developers build communication features into their apps.
 The QuickBlox iOS SDK is designed to work with Objective-C and Swift languages and provides various features such as messaging, video calling, push notifications, and user authentication.
