@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "QuickBloxSDK",
-            path: "Framework/Quickblox.xcframework"
+            path: "Quickblox.xcframework"
         ),
     ]
 )
