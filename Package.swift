@@ -11,13 +11,13 @@ let package = Package(
     products: [
         .library(
             name: "QuickBloxSDK",
-            targets: ["QuickBloxSDK"]),
+            targets: ["Quickblox"]),
     ],
     dependencies: [
     ],
     targets: [
         .binaryTarget(
-            name: "QuickBloxSDK",
+            name: "Quickblox",
             path: "Quickblox.xcframework"
         ),
     ]
