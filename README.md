@@ -22,10 +22,9 @@ QuickBlox iOS SDK is available using the [Swift Package Manager](https://www.swi
 
 To add QuickBlox IOS SDK to your project using SPM, you can follow these steps:
 
-Open your Xcode project and navigate to File > Swift Packages > Add Package Dependency.
-In the search bar, enter the QuickBlox repository URL: https://github.com/QuickBlox/ios-quickblox-sdk.git.
-Choose the branch "master" and click Next.
-Choose your project target and click Finish.
+1. Open your Xcode project and navigate to File > Swift Packages > Add Package Dependency.
+2. In the search bar, enter the QuickBlox repository URL: https://github.com/QuickBlox/ios-quickblox-sdk.git.
+3. Choose the branch "master" and click Next.
 Xcode will then fetch the QuickBlox iOS SDK and add it to your project. You can then import QuickBlox modules into your code and use its APIs.
 
 It's worth noting that the Swift Package Manager requires Xcode 11 or later, and it's only available for macOS and iOS projects. If you're working on an older version of Xcode, you can still use other dependency management tools like [CocoaPods](https://cocoapods.org) to install QuickBlox IOS SDK.
