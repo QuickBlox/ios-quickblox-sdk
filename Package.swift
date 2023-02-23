@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "QuickBloxSDK",
+    name: "Quickblox",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "QuickBloxSDK",
+            name: "Quickblox",
             targets: ["Quickblox"]),
     ],
     dependencies: [
