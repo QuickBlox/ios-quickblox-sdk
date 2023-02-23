@@ -18,7 +18,7 @@ Push notifications module: Provides APIs for integrating push notifications into
 The QuickBlox iOS SDK also includes sample projects and documentation to help you get started quickly.
 QuickBlox offers both a free and a paid plan with different pricing models, so you can choose the one that fits your needs.
 
-To start using the QuickBlox iOS SDK, you can download it from the [QuickBlox](https://quickblox.com) website and add it to your Xcode project. You can also use [CocoaPods](https://cocoapods.org) or [Swift Package Manager](https://www.swift.org/package-manager/) to install the SDK.
+To start using the QuickBlox iOS SDK, you can download it from the [QuickBlox](https://quickblox.com) website and add it to your Xcode project. You can use [Swift Package Manager](https://www.swift.org/package-manager/) to install the SDK.
 
 # Install
 
