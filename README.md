@@ -2,7 +2,7 @@
 
 QuickBlox iOS SDK ([Quickblox Framework](https://github.com/QuickBlox/ios-quickblox-sdk/tree/master/Quickblox.xcframework))
 
-Last SDK Version: 2.18.1
+Last SDK Version: 2.19.0
 
 The [QuickBlox](https://quickblox.com) platform provides the QuickBlox iOS SDK is a software development kit that provides a set of tools and APIs to help iOS developers build communication features into their apps.
 The QuickBlox iOS SDK is designed to work with Objective-C and Swift languages and provides various features such as messaging, video calling, push notifications, and user authentication.
@@ -22,7 +22,7 @@ To start using the QuickBlox iOS SDK, you can download it from the [QuickBlox](h
 
 # Install
 
-QuickBlox iOS SDK is available using the [Swift Package Manager](https://www.swift.org/package-manager/) (SPM) as of version 2.18.1.
+QuickBlox iOS SDK is available using the [Swift Package Manager](https://www.swift.org/package-manager/) (SPM) as of version 2.19.0.
 
 To add QuickBlox IOS SDK to your project using SPM, you can follow these steps:
 
