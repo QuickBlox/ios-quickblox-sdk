@@ -284,22 +284,6 @@
 		<data>
 		1Pt0nFMU49BQLiWpozgPGowde0c=
 		</data>
-		<key>Modules/module.private.modulemap</key>
-		<data>
-		Z4znCpmhsUFd+zfy8HLZwfJdVTM=
-		</data>
-		<key>PrivateHeaders/QBSessionManager+Private.h</key>
-		<data>
-		i3XqDi3XDJ4g0XSLva3amraGRzQ=
-		</data>
-		<key>PrivateHeaders/QBSessionTimer.h</key>
-		<data>
-		IwWqX4mhEDsNaO4sw/7padbiluw=
-		</data>
-		<key>PrivateHeaders/QBSession_Private.h</key>
-		<data>
-		ZHYGC5D3l0FaAI14nrbbBHg8Sxo=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -784,34 +768,6 @@
 			<key>hash2</key>
 			<data>
 			qne1yWww7iWsuc8ctfY9mdaiT9Es3eyeckYBrdm0Fp4=
-			</data>
-		</dict>
-		<key>Modules/module.private.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/6/IFSVEKe83xosjH1Z8p7o5WCcJe+wOLUaG6d9ui/M=
-			</data>
-		</dict>
-		<key>PrivateHeaders/QBSessionManager+Private.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Sio6EbAPY7mAM1dlP8OKgNDBGKY2PngcWVZNcG7CeGE=
-			</data>
-		</dict>
-		<key>PrivateHeaders/QBSessionTimer.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			L/MlZj2ZsPgryEIqk1+CLt77ZRGoCeRZjzzqqv05osw=
-			</data>
-		</dict>
-		<key>PrivateHeaders/QBSession_Private.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ozaSG/CDi/xG6A59UxaEvwXhFqUsgdHrLOOH4uLuAQU=
 			</data>
 		</dict>
 	</dict>
