@@ -43,6 +43,12 @@
 #import <QuickBlox/QBPrivacyList.h>
 #import <QuickBlox/QBPushNotificationsConsts.h>
 #import <QuickBlox/QBPushNotificationsEnums.h>
+#import <QuickBlox/QBAnswerAssistMessage.h>
+#import <QuickBlox/QBAnswerAssistHistoryMessage.h>
+#import <QuickBlox/QBTranslateMessage.h>
+#import <QuickBlox/QBAILanguage.h>
+#import <QuickBlox/QBAIRole.h>
+
 #import <QuickBlox/QBRequest.h>
 #import <QuickBlox/QBRequest+QBAddressBook.h>
 #import <QuickBlox/QBRequest+QBAuth.h>
@@ -51,9 +57,13 @@
 #import <QuickBlox/QBRequest+QBCustomObjects.h>
 #import <QuickBlox/QBRequest+QBPushNotifications.h>
 #import <QuickBlox/QBRequest+QBUsers.h>
+#import <QuickBlox/QBRequest+AnswerAssist.h>
+#import <QuickBlox/QBRequest+Translate.h>
 #import <QuickBlox/QBRequestStatus.h>
+
 #import <QuickBlox/QBResponse.h>
 #import <QuickBlox/QBResponsePage.h>
+
 #import <QuickBlox/QBSession.h>
 #import <QuickBlox/QBSessionManager.h>
 #import <QuickBlox/QBSettings.h>
@@ -64,7 +74,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Framework version 2.18.1
+/// Framework version 2.20.0
 FOUNDATION_EXPORT NSString * const QuickbloxFrameworkVersion;
 
 @interface Quickblox : NSObject

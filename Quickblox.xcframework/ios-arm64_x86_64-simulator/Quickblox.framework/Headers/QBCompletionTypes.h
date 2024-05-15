@@ -27,5 +27,7 @@ typedef void(^qb_response_messages_block_t)(QBResponse *response, NSArray<QBChat
 typedef void(^qb_response_unread_messages_block_t) (QBResponse *response, NSUInteger count, NSDictionary <NSString *, id> * dialogs);
 /**Block with response instance and count */
 typedef void(^qb_response_count_block_t) (QBResponse *response, NSUInteger count);
+/**Block with response instance and answerAssist*/
+typedef void(^qb_response_answerAssist_block_t) (QBResponse *response, NSString *answerAssist);
 
 NS_ASSUME_NONNULL_END

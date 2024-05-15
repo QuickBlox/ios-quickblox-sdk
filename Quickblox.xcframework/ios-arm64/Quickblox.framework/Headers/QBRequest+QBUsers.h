@@ -304,6 +304,18 @@ typedef void(^qb_response_user_block_t)(QBResponse *response, QBUUser *user);
 + (QBRequest *)deleteCurrentUserWithSuccessBlock:(nullable qb_response_block_t)successBlock
                                       errorBlock:(nullable qb_response_block_t)errorBlock;
 
+/**
+ Delete Current User
+ 
+ @note You should login firstly in order to delete current user
+ 
+ @param successBlock Block with response instance if the request is succeeded
+ @param errorBlock Block with response instance if the request is failed.
+ 
+ @return An instance of QBRequest for cancel operation mainly.
+ */
++ (void)deleteCurrentUserWithCompletion:(void (^) (NSError * _Nullable error))completion;
+
 //MARK: - Reset password
 
 /**

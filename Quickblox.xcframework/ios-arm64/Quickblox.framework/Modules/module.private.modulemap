@@ -1,0 +1,6 @@
+explicit framework module Quickblox.Private {
+    header "QBSessionTimer.h"
+    header "QBSession_Private.h"
+    header "QBSessionManager+Private.h"
+    export *
+}

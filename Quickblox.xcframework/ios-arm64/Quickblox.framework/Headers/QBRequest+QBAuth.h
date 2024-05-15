@@ -47,6 +47,20 @@ typedef void(^qb_response_user_block_t)(QBResponse *response, QBUUser *tUser);
                        errorBlock:(nullable qb_response_block_t)errorBlock;
 
 /**
+ User LogIn with login
+ 
+ @param login Login of QBUUser which authenticates.
+ @param password Password of QBUUser which authenticates.
+ @param successBlock Block with response and user instances if the request is succeeded.
+ @param errorBlock Block with response instance if the request is failed.
+ 
+ @return An instance of QBRequest for cancel operation mainly.
+ */
++ (void)login:(NSString *)login
+                         password:(NSString *)password
+                completion:(void (^) (QBUUser * _Nullable tUser, NSError * _Nullable error))completion;
+
+/**
  User LogIn with email
  
  @param email Email of QBUUser which authenticates.
@@ -106,6 +120,16 @@ typedef void(^qb_response_user_block_t)(QBResponse *response, QBUUser *tUser);
 + (QBRequest *)logOutWithSuccessBlock:(nullable qb_response_block_t)successBlock
                            errorBlock:(nullable qb_response_block_t)errorBlock;
 
+/**
+ LogOut current user
+ 
+ @param successBlock Block with response instance if the request is succeeded
+ @param errorBlock Block with response instance if the request is failed.
+ 
+ @return An instance of QBRequest for cancel operation mainly.
+ */
++ (void)logOutWithCompletion:(void (^) (NSError * _Nullable error))completion;
+
 //MARK: - Create User
 
 /**
@@ -120,6 +144,18 @@ typedef void(^qb_response_user_block_t)(QBResponse *response, QBUUser *tUser);
 + (QBRequest *)signUp:(QBUUser *)user
          successBlock:(nullable qb_response_user_block_t)successBlock
            errorBlock:(nullable qb_response_block_t)errorBlock;
+
+/**
+ User sign up
+ 
+ @param user User to signup
+ @param successBlock Block with response and user instances if the request is succeeded.
+ @param errorBlock Block with response instance if the request is failed.
+ 
+ @return An instance of QBRequest. Use this instance to cancel the operation.
+ */
++ (void)signUp:(QBUUser *)user
+    completion:(void (^) (QBUUser * _Nullable User, NSError * _Nullable error))completion;
 
 @end
 
