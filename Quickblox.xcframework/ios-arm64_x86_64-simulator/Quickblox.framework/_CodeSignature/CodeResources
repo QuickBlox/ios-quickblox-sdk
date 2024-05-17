@@ -8,10 +8,6 @@
 		<data>
 		Vlo4memfH+aMPL3lqAy8J77rxlw=
 		</data>
-		<key>Headers/QBAIRole.h</key>
-		<data>
-		9cAwS5d1i8toyYZZDkuuEt6FNPE=
-		</data>
 		<key>Headers/QBASession.h</key>
 		<data>
 		vNblqHjRV5/9olyAayi5FGBU5Os=
@@ -34,7 +30,7 @@
 		</data>
 		<key>Headers/QBAnswerAssistHistoryMessage.h</key>
 		<data>
-		YZOn9SaweaMSdeDYsitqUh/rk1g=
+		poCwiYOPHMW6A2oWdxuSok/RcjA=
 		</data>
 		<key>Headers/QBAnswerAssistMessage.h</key>
 		<data>
@@ -274,7 +270,7 @@
 		</data>
 		<key>Headers/Quickblox.h</key>
 		<data>
-		Ac6kYCFf2Q7IfUISnO4qpS5qyNQ=
+		m9jTQ4w047P3YKFcUWOwMyAsskI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -292,13 +288,6 @@
 			<key>hash2</key>
 			<data>
 			RS7+J8BShc5CDtCqj8SSYXFo0tLUHusxreex976M2F8=
-			</data>
-		</dict>
-		<key>Headers/QBAIRole.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bMS9eW5ZRFRi1bBfa57SU2mhLE/gUCWK2NGoeIwZEwk=
 			</data>
 		</dict>
 		<key>Headers/QBASession.h</key>
@@ -340,7 +329,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mIRKQHhQuevbBYHTPYwuYf4kOfqhK2c5uaGjqK1At44=
+			OEddZnmJzuJzu55GNbSyfj5kfvBM55fazXv8Pt0KwC8=
 			</data>
 		</dict>
 		<key>Headers/QBAnswerAssistMessage.h</key>
@@ -760,7 +749,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fTf2p0ENazOWYH3LIMYgwnXplL1jJSRQYGcU65fiIOs=
+			v+3T7dkzSYYSrXU9xNVgGX82BNTXbxmFX7XUKXP79B8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

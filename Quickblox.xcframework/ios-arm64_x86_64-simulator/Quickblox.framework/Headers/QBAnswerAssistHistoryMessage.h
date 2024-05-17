@@ -9,7 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class QBAIRole;
+/**
+ QBAIRoleType emun interface.
+ This emun represents the role of the message sender. Can be a user or assistant.
+ */
+typedef NSString *QBAIRoleType NS_TYPED_ENUM;
+extern QBAIRoleType const  QBAIRoleTypeUser;
+extern QBAIRoleType const  QBAIRoleTypeAssistant;
 
 /**
  QBAnswerAssistHistoryMessage class interface.
@@ -20,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The role of the message sender. Can be a user or assistant.
  */
-@property (readonly) QBAIRole *role;
+@property (readonly) QBAIRoleType role;
 
 /**
  Message text in conversation history.
@@ -31,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)init NS_UNAVAILABLE;
 + (id)new NS_UNAVAILABLE;
 
-- (instancetype)initWithRole:(QBAIRole *)role
+- (instancetype)initWithRole:(QBAIRoleType)role
                      message:(NSString *)message;
 
 @end
