@@ -46,7 +46,11 @@
 #import <QuickBlox/QBAnswerAssistMessage.h>
 #import <QuickBlox/QBAnswerAssistHistoryMessage.h>
 #import <QuickBlox/QBTranslateMessage.h>
-#import <QuickBlox/QBAILanguage.h>
+#import <QuickBlox/QBLanguage.h>
+#import <QuickBlox/QBAnswerAssistRequestSerializer.h>
+#import <QuickBlox/QBAnswerAssistResponseSerialisation.h>
+#import <QuickBlox/QBTranslateRequestSerializer.h>
+#import <QuickBlox/QBTranslateResponseSerialisation.h>
 
 #import <QuickBlox/QBRequest.h>
 #import <QuickBlox/QBRequest+QBAddressBook.h>

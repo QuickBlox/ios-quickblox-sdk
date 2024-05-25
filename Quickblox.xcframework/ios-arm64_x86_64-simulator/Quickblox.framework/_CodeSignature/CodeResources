@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/QBAILanguage.h</key>
-		<data>
-		Vlo4memfH+aMPL3lqAy8J77rxlw=
-		</data>
 		<key>Headers/QBASession.h</key>
 		<data>
 		vNblqHjRV5/9olyAayi5FGBU5Os=
@@ -98,7 +94,7 @@
 		</data>
 		<key>Headers/QBCompletionTypes.h</key>
 		<data>
-		qpVqBNdAEavkVEGxAxokT4olpUw=
+		mqnB3tNeX/HIT5JSvCZrwPRIwKc=
 		</data>
 		<key>Headers/QBConnection.h</key>
 		<data>
@@ -139,6 +135,10 @@
 		<key>Headers/QBHTTPClient.h</key>
 		<data>
 		o8Nij4RYqWTxLVP0URIoQCfeekA=
+		</data>
+		<key>Headers/QBLanguage.h</key>
+		<data>
+		4dXHxZ/edRGsF/Ad39S9ZvalL+4=
 		</data>
 		<key>Headers/QBLoggerEnums.h</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Headers/QBRequest+AnswerAssist.h</key>
 		<data>
-		ZOMjIPHKQfBygwByqEg66ZNmVp0=
+		ao3nYN2NmYYO5SU7XPDm4Sc3xyQ=
 		</data>
 		<key>Headers/QBRequest+QBAddressBook.h</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Headers/QBRequest+QBAuth.h</key>
 		<data>
-		H5Ic39H23Hdly9dKNZKF1zzpMVM=
+		uhNEaqRi8RM3Vpr76jdLMZAsqCg=
 		</data>
 		<key>Headers/QBRequest+QBChat.h</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Headers/QBRequest+QBUsers.h</key>
 		<data>
-		fOTHIMkyVoXAVAT32H61WzjR5so=
+		beqCTv73/uif1R/Y3xLZxuwDHr8=
 		</data>
 		<key>Headers/QBRequest+Translate.h</key>
 		<data>
@@ -270,11 +270,11 @@
 		</data>
 		<key>Headers/Quickblox.h</key>
 		<data>
-		m9jTQ4w047P3YKFcUWOwMyAsskI=
+		Lihn62R+3fCZ2O9tBzzo1YbUKQY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DT8Yll5j6mUkpCOyt9y2qp4AM2g=
+		sSskrwA7UAVGEkdWEoy91O3qQN0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -283,13 +283,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/QBAILanguage.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RS7+J8BShc5CDtCqj8SSYXFo0tLUHusxreex976M2F8=
-			</data>
-		</dict>
 		<key>Headers/QBASession.h</key>
 		<dict>
 			<key>hash2</key>
@@ -448,7 +441,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tNoc5ry/EYfd/gib97W39rSM3HyVytJaehPGvZYTv/M=
+			LSBzR9NpRyRue1dNPls9sWuKzA64flZ/A7NR0zhkXS0=
 			</data>
 		</dict>
 		<key>Headers/QBConnection.h</key>
@@ -519,6 +512,13 @@
 			<key>hash2</key>
 			<data>
 			gR/6g5cCwky1y0YALjVZjrrFwPPtfS+pKIHowUJIsnc=
+			</data>
+		</dict>
+		<key>Headers/QBLanguage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4zf5Tlt8xiZq8NYbmNyrORAIiY0LV0j1yBEVKNWQB2c=
 			</data>
 		</dict>
 		<key>Headers/QBLoggerEnums.h</key>
@@ -602,7 +602,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AUC80tDgYwf00UmfQfc93ZlJrVCEw96cBZutbFoPT1E=
+			PsAo0Hy2ryCxRnyGpvRTvyl8y/q23I6Yr2jV62k5+Ew=
 			</data>
 		</dict>
 		<key>Headers/QBRequest+QBAddressBook.h</key>
@@ -616,7 +616,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VDzA5WbdClwBGBgMXv0q4F6+y32XGV26Q+IoQkFLRZ4=
+			vjzLmgFCOS/r9IVqt2DM7yASq6g3E6wHYLwHWI7rMX4=
 			</data>
 		</dict>
 		<key>Headers/QBRequest+QBChat.h</key>
@@ -651,7 +651,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vRBTEpo6kwwegMZHbTqJ/yaIIQqpvHd1h6ugYopXJGI=
+			hK73hd3jCQRku663C8zdc+TcJcWzTkoAHdIbfEIjBGY=
 			</data>
 		</dict>
 		<key>Headers/QBRequest+Translate.h</key>
@@ -749,7 +749,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v+3T7dkzSYYSrXU9xNVgGX82BNTXbxmFX7XUKXP79B8=
+			gIo1Cn3benE/KosMF71qhyfiZ2EE4zhxcGFytmrsieM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
