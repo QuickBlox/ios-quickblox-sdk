@@ -5,7 +5,7 @@
 //  Copyright (c) 2017 QuickBlox. All rights reserved.
 //
 
-#import "QBJSONRequestSerializer.h"
+#import <QuickBlox/QBJSONRequestSerializer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
