@@ -194,7 +194,7 @@
 		</data>
 		<key>Headers/QBRequest+QBAuth.h</key>
 		<data>
-		uhNEaqRi8RM3Vpr76jdLMZAsqCg=
+		5ua7+XwL1Gqm9ntOEY/VmO8lRX0=
 		</data>
 		<key>Headers/QBRequest+QBChat.h</key>
 		<data>
@@ -270,7 +270,7 @@
 		</data>
 		<key>Headers/Quickblox.h</key>
 		<data>
-		4nzdbQrw30CQKzPhtHVZ52dKfI0=
+		Lihn62R+3fCZ2O9tBzzo1YbUKQY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -616,7 +616,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vjzLmgFCOS/r9IVqt2DM7yASq6g3E6wHYLwHWI7rMX4=
+			NILf+a/GvR7RDgxt/fMx7Tw5stCCoEU+Y3Uz/q/t39s=
 			</data>
 		</dict>
 		<key>Headers/QBRequest+QBChat.h</key>
@@ -749,7 +749,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ruDqtBkF9oiaK3M7eDL6L0Erkc5FrFPe/MH8I979Y1c=
+			gIo1Cn3benE/KosMF71qhyfiZ2EE4zhxcGFytmrsieM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

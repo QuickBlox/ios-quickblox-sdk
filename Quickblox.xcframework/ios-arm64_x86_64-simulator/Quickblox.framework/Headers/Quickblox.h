@@ -51,7 +51,6 @@
 #import <QuickBlox/QBAnswerAssistResponseSerialisation.h>
 #import <QuickBlox/QBTranslateRequestSerializer.h>
 #import <QuickBlox/QBTranslateResponseSerialisation.h>
-#import <QuickBlox/QBJSONRequestSerializer.h>
 
 #import <QuickBlox/QBRequest.h>
 #import <QuickBlox/QBRequest+QBAddressBook.h>

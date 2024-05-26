@@ -54,9 +54,9 @@ typedef void(^qb_response_user_block_t)(QBResponse *response, QBUUser *tUser);
  
  @return An instance of QBUUser for cancel operation mainly.
  */
-+ (void)login:(NSString *)login
-                         password:(NSString *)password
-                completion:(void (^) (QBUUser * _Nullable tUser, NSError * _Nullable error))completion;
+//+ (void)login:(NSString *)login
+//                         password:(NSString *)password
+//                completion:(void (^) (QBUUser * _Nullable tUser, NSError * _Nullable error))completion;
 
 /**
  User LogIn with email
@@ -123,7 +123,7 @@ typedef void(^qb_response_user_block_t)(QBResponse *response, QBUUser *tUser);
  
  @return An instance of NSError  if the request is failed.
  */
-+ (void)logOutWithCompletion:(void (^) (NSError * _Nullable error))completion;
+//+ (void)logOutWithCompletion:(void (^) (NSError * _Nullable error))completion;
 
 //MARK: - Create User
 
@@ -147,8 +147,8 @@ typedef void(^qb_response_user_block_t)(QBResponse *response, QBUUser *tUser);
  
  @return An instance of QBUUser. Use this instance to cancel the operation.
  */
-+ (void)signUp:(QBUUser *)user
-    completion:(void (^) (QBUUser * _Nullable User, NSError * _Nullable error))completion;
+//+ (void)signUp:(QBUUser *)user
+//    completion:(void (^) (QBUUser * _Nullable User, NSError * _Nullable error))completion;
 
 @end
 
