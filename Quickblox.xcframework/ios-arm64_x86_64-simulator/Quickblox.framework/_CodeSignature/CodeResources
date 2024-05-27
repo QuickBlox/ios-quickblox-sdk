@@ -20,10 +20,6 @@
 		<data>
 		wIILY+5hJohHXhCGCgzrU80VM4E=
 		</data>
-		<key>Headers/QBAnswerAssistCompletionTypes.h</key>
-		<data>
-		rwBgtXn771hv9MsZPpb89kCW13Q=
-		</data>
 		<key>Headers/QBAnswerAssistHistoryMessage.h</key>
 		<data>
 		poCwiYOPHMW6A2oWdxuSok/RcjA=
@@ -309,13 +305,6 @@
 			<key>hash2</key>
 			<data>
 			sJNPKpm00YnxZSIYY1pMIoOU8lS3edbes3jK/vXi4VI=
-			</data>
-		</dict>
-		<key>Headers/QBAnswerAssistCompletionTypes.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LrtNnhLrK2blYEPPI+P3UsZ+BgNR+lxzr7RtKoa3vYs=
 			</data>
 		</dict>
 		<key>Headers/QBAnswerAssistHistoryMessage.h</key>
