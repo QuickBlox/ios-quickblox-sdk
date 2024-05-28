@@ -16,6 +16,12 @@ let package = Package(
     dependencies: [
     ],
     targets: [
+        .target(
+          name: "QuickbloxWrapper",
+          dependencies: ["Quickblox"],
+          path: "Quickblox-Wrapper",
+          resources: [.process("Resources/PrivacyInfo.xcprivacy")]
+        ),
         .binaryTarget(
             name: "Quickblox",
             path: "Quickblox.xcframework"
