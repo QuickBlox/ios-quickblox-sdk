@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "Quickblox",
-            targets: ["Quickblox"]),
+            targets: ["QuickbloxWrapper"]),
     ],
     dependencies: [
     ],
@@ -20,8 +20,7 @@ let package = Package(
           name: "QuickbloxWrapper",
           dependencies: ["Quickblox"],
           path: "Quickblox-Wrapper",
-          resources: [.process("Resources")]
-//          resources: [.process("Resources/PrivacyInfo.xcprivacy")]
+          resources: [.process("Resources/PrivacyInfo.xcprivacy")]
         ),
         .binaryTarget(
             name: "Quickblox",
