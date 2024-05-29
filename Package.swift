@@ -20,7 +20,7 @@ let package = Package(
           name: "QuickbloxWrapper",
           dependencies: ["Quickblox"],
           path: "Quickblox-Wrapper",
-          resources: [.process("Resources")]),
+          resources: [.process("Resources")]
 //          resources: [.process("Resources/PrivacyInfo.xcprivacy")]
         ),
         .binaryTarget(
