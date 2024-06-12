@@ -47,6 +47,8 @@
 #import <QuickBlox/QBAnswerAssistHistoryMessage.h>
 #import <QuickBlox/QBTranslateMessage.h>
 #import <QuickBlox/QBLanguage.h>
+#import <QuickBlox/AI.h>
+#import <QuickBlox/QB.h>
 
 #import <QuickBlox/QBRequest.h>
 #import <QuickBlox/QBRequest+QBAddressBook.h>
@@ -59,6 +61,7 @@
 #import <QuickBlox/QBRequest+AnswerAssist.h>
 #import <QuickBlox/QBRequest+Translate.h>
 #import <QuickBlox/QBRequestStatus.h>
+
 
 #import <QuickBlox/QBResponse.h>
 #import <QuickBlox/QBResponsePage.h>

@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/AI.h</key>
+		<data>
+		uDjE+uAW9UPeBjZnTuBvga+Hjlk=
+		</data>
+		<key>Headers/QB.h</key>
+		<data>
+		RTjmcdJzQHKEfW7gwNbiHR5yO68=
+		</data>
 		<key>Headers/QBASession.h</key>
 		<data>
 		vNblqHjRV5/9olyAayi5FGBU5Os=
@@ -266,11 +274,11 @@
 		</data>
 		<key>Headers/Quickblox.h</key>
 		<data>
-		o+fliCQfl1F6ZeEFhFY1fXZogvI=
+		Zw8FCzG9GhYw7UC8ztAhKqNCEYA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sSskrwA7UAVGEkdWEoy91O3qQN0=
+		MjVyQukACqKVZ02ghAVucOwMDhc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -279,6 +287,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/AI.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YR1FIP1uOQMnSSyIBnzp4CtXbNGmJgch/9Gh9XXM/o4=
+			</data>
+		</dict>
+		<key>Headers/QB.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ldB8lW6/z54L8ClHr5tsPiLMP7Nu4JmLTR7dB8HBXQ8=
+			</data>
+		</dict>
 		<key>Headers/QBASession.h</key>
 		<dict>
 			<key>hash2</key>
@@ -738,7 +760,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sDxdQbk5fCj4QUU9n8Por0Z/E0MnR2j1oA1e/Z41+N8=
+			tL3TxcAI9lNlym7XWQnKy0hA5O/1W+WOMwMxBISdGpQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
