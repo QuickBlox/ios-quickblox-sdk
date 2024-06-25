@@ -1,1 +1,2 @@
-//Copyright (c) 2023, QuickBlox
+//Copyright (c) 2019, QuickBlox
+//All rights reserved.
