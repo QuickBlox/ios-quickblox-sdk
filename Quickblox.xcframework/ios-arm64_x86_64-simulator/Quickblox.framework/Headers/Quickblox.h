@@ -43,12 +43,19 @@
 #import <QuickBlox/QBPrivacyList.h>
 #import <QuickBlox/QBPushNotificationsConsts.h>
 #import <QuickBlox/QBPushNotificationsEnums.h>
-#import <QuickBlox/QBAnswerAssistMessage.h>
-#import <QuickBlox/QBAnswerAssistHistoryMessage.h>
-#import <QuickBlox/QBTranslateMessage.h>
-#import <QuickBlox/QBLanguage.h>
+#import <QuickBlox/QBAIAnswerAssistMessage.h>
+#import <QuickBlox/QBAIAnswerAssistHistoryMessage.h>
+#import <QuickBlox/QBAITranslateMessage.h>
+#import <QuickBlox/QBAILanguage.h>
 #import <QuickBlox/AI.h>
-#import <QuickBlox/QB.h>
+#import <QuickBlox/QBAIAnswerAssistResultProtocol.h>
+#import <QuickBlox/QBAIAnswerAssistResult.h>
+#import <QuickBlox/QBAITranslateResultProtocol.h>
+#import <QuickBlox/QBAITranslateResult.h>
+#import <QuickBlox/QBAIAnswerAssistHistoryMessageProtocol.h>
+#import <QuickBlox/QBAIAnswerAssistMessageProtocol.h>
+#import <QuickBlox/QBAITranslateMessageProtocol.h>
+#import <QuickBlox/QBAIRoleType.h>
 
 #import <QuickBlox/QBRequest.h>
 #import <QuickBlox/QBRequest+QBAddressBook.h>
@@ -58,10 +65,9 @@
 #import <QuickBlox/QBRequest+QBCustomObjects.h>
 #import <QuickBlox/QBRequest+QBPushNotifications.h>
 #import <QuickBlox/QBRequest+QBUsers.h>
-#import <QuickBlox/QBRequest+AnswerAssist.h>
-#import <QuickBlox/QBRequest+Translate.h>
+#import <QuickBlox/QBRequest+AIAnswerAssist.h>
+#import <QuickBlox/QBRequest+AITranslate.h>
 #import <QuickBlox/QBRequestStatus.h>
-
 
 #import <QuickBlox/QBResponse.h>
 #import <QuickBlox/QBResponsePage.h>
@@ -80,6 +86,10 @@ NS_ASSUME_NONNULL_BEGIN
 FOUNDATION_EXPORT NSString * const QuickbloxFrameworkVersion;
 
 @interface Quickblox : NSObject
+/**
+ The class provides access to the AI ​​Features in the iOS SDK.
+ */
+@property(class, nonatomic, readonly) AI *ai;
 
 + (void)initWithApplicationId:(NSUInteger)appId
                       authKey:(NSString *)authKey
@@ -94,5 +104,7 @@ FOUNDATION_EXPORT NSString * const QuickbloxFrameworkVersion;
 - (id)init NS_UNAVAILABLE;
 
 @end
+
+@compatibility_alias QB Quickblox;
 
 NS_ASSUME_NONNULL_END

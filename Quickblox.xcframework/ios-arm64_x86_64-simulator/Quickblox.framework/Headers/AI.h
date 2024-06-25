@@ -9,8 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class QBAnswerAssistMessage;
-@class QBTranslateMessage;
+@protocol QBAIAnswerAssistHistoryMessageProtocol;
+@protocol QBAIAnswerAssistResultProtocol;
+@protocol QBAITranslateResultProtocol;
 
 @interface AI : NSObject
 /**
@@ -20,8 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return An answer from AI'.
  */
-- (void)answerAssistWithMessage:(QBAnswerAssistMessage *)answerAssist
-                 completion:(void (^) (NSString * _Nullable answer, NSError * _Nullable error))completion;
+- (void)answerAssistWithSmartChatAssistantId:(NSString *)smartChatAssistantId
+                             messageToAssist:(NSString *)messageToAssist
+                                     history:(NSArray<id<QBAIAnswerAssistHistoryMessageProtocol>> *)history
+                                  completion:(void (^) (id<QBAIAnswerAssistResultProtocol>result, NSError * _Nullable error))completion;
+
 /**
  Create translate request
  
@@ -29,8 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return An answer from AI'.
  */
-- (void)translateWithMessage:(QBTranslateMessage *)translate
-                 completion:(void (^) (NSString * _Nullable answer, NSError * _Nullable error))completion;
+- (void)translateWithSmartChatAssistantId:(NSString *)smartChatAssistantId
+                          textToTranslate:(NSString *)textToTranslate
+                             languageCode:(NSString *)languageCode
+                               completion:(void (^) (id<QBAITranslateResultProtocol>result, NSError * _Nullable error))completion;
 
 @end
 
