@@ -83,7 +83,7 @@ To get **ID **of SmartChat Assistant to use it as `smartChatAssistantId ` param 
 3. Edit the SmartChat Assistant settings.
 4. Click the Save button to save changes.
 
-<img src="https://files.readme.io/3c5820d-Screenshot_2023-12-14_at_13.35.54.png"/>
+<img src="/assets/images/SmartChatAssistant.png"/>
 
 
 ## AI Assist Answer
