@@ -102,8 +102,8 @@ let history = [QBAnswerAssistHistoryMessage(role: .assistant, message: "History 
 ]
 
 let result = try await QB.ai.answerAssist(withSmartChatAssistantId: smartChatAssistantId,
-                                                      messageToAssist: messageToAssist,
-                                                      history: history)
+					  messageToAssist: messageToAssist,
+				          history: history)
 let answer = result.answer
 // handle answer
 ```
@@ -146,8 +146,8 @@ let textToTranslate = "Hola!"
 let languageCode = "en"
         
 let result = try await QB.ai.translate(withSmartChatAssistantId: smartChatAssistantId,
-                                                   textToTranslate: textToTranslate,
-                                                   languageCode: languageCode)
+				       textToTranslate: textToTranslate,
+				       languageCode: languageCode)
 let answer = result.answer
 // handle answer
 ```
