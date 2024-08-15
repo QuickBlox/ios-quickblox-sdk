@@ -32,14 +32,14 @@ For more information on spm customization options, you can refer to the [Apple D
 
 The QuickBlox iOS SDK includes several modules that provide different functionalities such as:
 
-Chat module: Provides APIs to implement one-to-one and group chat functionalities in your app.
-Video chat module: Provides APIs for video calling and conferencing features in your app.
-Users module: Provides APIs for user management and authentication in your app.
-Push notifications module: Provides APIs for integrating push notifications into your app.
-The QuickBlox iOS SDK also includes sample projects and documentation to help you get started quickly.
-QuickBlox offers both a free and a paid plan with different pricing models, so you can choose the one that fits your needs.
+- [Chat module](https://docs.quickblox.com/docs/ios-chat): Provides APIs to implement one-to-one and group chat functionalities in your app. 
+- [Video chat module](https://docs.quickblox.com/docs/ios-video-calling): Provides APIs for video calling and conferencing features in your app.
+- [Users module](https://docs.quickblox.com/docs/ios-users): Provides APIs for user management and authentication in your app.
+- [Push notifications module](https://docs.quickblox.com/docs/ios-push-notifications): Provides APIs for integrating push notifications into your app.
 
-To start using the QuickBlox iOS SDK, you can download it from the [QuickBlox](https://quickblox.com) website and add it to your Xcode project. You can use [Swift Package Manager](https://www.swift.org/package-manager/) to install the SDK.
+For detailed information, including step-by-step guides to get started quickly, please refer to the official [QuickBlox iOS SDK Quick Start Guide](https://docs.quickblox.com/docs/ios-quick-start).
+
+QuickBlox offers both a free and a paid plan with different [pricing](https://quickblox.com/pricing/) models, so you can choose the one that fits your needs.
 
 # AI Features
 
@@ -93,25 +93,22 @@ QuickBlox provides answer assistant functionality that helps users effortlessly 
 ### How to use Assist Answer
 
 ```swift
-let smartChatAssistantId = "65d5f3473d5d68095462165d"
+let smartChatAssistantId = "XXXXXXXXXXXXXXXXXXXXXXXX"
 let messageToAssist = "What is Quickblox?"
 
-let history = [QBAnswerAssistHistoryMessage(role: .assistant,
-                                                    message: "History message"),
-                       QBAnswerAssistHistoryMessage(role: .user,
-                                                    message: "Hi"),
-                       QBAnswerAssistHistoryMessage(role: .assistant,
-                                                    message: "Hello! How can I assist you today?")
-        ]
+let history = [QBAnswerAssistHistoryMessage(role: .assistant, message: "History message"),
+	       QBAnswerAssistHistoryMessage(role: .user, message: "Hi"),
+	       QBAnswerAssistHistoryMessage(role: .assistant, message: "Hello! How can I assist you today?")
+]
 
-let result = try await QB.ai.answerAssist(withSmartChatAssistantId: QBAnswerAssistTestUser.smartChatAssistantId,
-                                                      messageToAssist: "What is Quickblox?",
+let result = try await QB.ai.answerAssist(withSmartChatAssistantId: smartChatAssistantId,
+                                                      messageToAssist: messageToAssist,
                                                       history: history)
 let answer = result.answer
 // handle answer
 ```
 ```objectivec
-NSString *smartChatAssistantId = @"65d5f3473d5d68095462165d";
+NSString *smartChatAssistantId = @"XXXXXXXXXXXXXXXXXXXXXXXX";
 NSString *messageToAssist = @"What is Quickblox?";
     
 NSArray *history = @[
@@ -120,7 +117,10 @@ NSArray *history = @[
     [[QBAnswerAssistHistoryMessage alloc] initWithRole:QBAIRoleTypeAssistant message:@"Hello! How can I assist you today?"]
 ];
     
-[QB.ai answerAssistWithSmartChatAssistantId:smartChatAssistantId messageToAssist:messageToAssist history:history completion:^(id<QBAIAnswerAssistResultProtocol>  _Nonnull result, NSError * _Nullable error) {
+[QB.ai answerAssistWithSmartChatAssistantId:smartChatAssistantId
+			    messageToAssist:messageToAssist
+		                    history:history
+			         completion:^(id<QBAIAnswerAssistResultProtocol>  _Nonnull result, NSError * _Nullable error) {
     if (result) {
         NSString *answer = result.answer;
         // handle answer
@@ -141,13 +141,9 @@ QuickBlox offers translation functionality that helps users easily translate tex
 ### How to use AI Translate
 
 ```swift
-let smartChatAssistantId = "65d5f3473d5d68095462165d"
+let smartChatAssistantId = "XXXXXXXXXXXXXXXXXXXXXXXX"
 let textToTranslate = "Hola!"
 let languageCode = "en"
-
-let message = QBTranslateMessage(message: textToTranslate,
-                                         smartChatAssistantId: smartChatAssistantId,
-                                         languageCode: languageCode)
         
 let result = try await QB.ai.translate(withSmartChatAssistantId: smartChatAssistantId,
                                                    textToTranslate: textToTranslate,
@@ -156,11 +152,14 @@ let answer = result.answer
 // handle answer
 ```
 ```objectivec
-NSString *smartChatAssistantId = @"65d5f3473d5d68095462165d";
+NSString *smartChatAssistantId = @"XXXXXXXXXXXXXXXXXXXXXXXX";
 NSString *textToTranslate = @"Hola!";
 NSString *languageCode = @"en";
     
-[QB.ai translateWithSmartChatAssistantId:smartChatAssistantId textToTranslate:textToTranslate languageCode:languageCode completion:^(id<QBAITranslateResultProtocol>  _Nonnull result, NSError * _Nullable error) {
+[QB.ai translateWithSmartChatAssistantId:smartChatAssistantId
+  			 textToTranslate:textToTranslate
+			    languageCode:languageCode
+			      completion:^(id<QBAITranslateResultProtocol>  _Nonnull result, NSError * _Nullable error) {
     if (result) {
         NSString *answer = result.answer;
         // handle answer
