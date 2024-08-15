@@ -15,6 +15,19 @@ Last SDK Version: 2.20.0
 The [QuickBlox](https://quickblox.com) platform provides the QuickBlox iOS SDK is a software development kit that provides a set of tools and APIs to help iOS developers build communication features into their apps.
 The QuickBlox iOS SDK is designed to work with Objective-C and Swift languages and provides various features such as messaging, video calling, push notifications, and user authentication.
 
+# Install
+
+QuickBlox iOS SDK is available using the [Swift Package Manager](https://www.swift.org/package-manager/) (SPM) as of version 2.19.0.
+
+To add QuickBlox IOS SDK to your project using SPM, you can follow these steps:
+
+1. Open your Xcode project and navigate to File > Swift Packages > Add Package Dependency.
+2. In the search bar, enter the QuickBlox repository URL: https://github.com/QuickBlox/ios-quickblox-sdk.git  and click Add Package.
+3. Xcode will then fetch the QuickBlox iOS SDK and you can add it to your project by clicking Add Package.
+4. You can then import QuickBlox modules into your code and use its API.
+
+For more information on spm customization options, you can refer to the [Apple Documentation](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
+
 # Features
 
 The QuickBlox iOS SDK includes several modules that provide different functionalities such as:
@@ -80,7 +93,7 @@ QuickBlox provides answer assistant functionality that helps users effortlessly 
 ### How to use Assist Answer
 
 ```swift
-let smartChatAssistantId = "6633a1300fea600001bd6e7"
+let smartChatAssistantId = "65d5f3473d5d68095462165d"
 let messageToAssist = "What is Quickblox?"
 
 let history = [QBAnswerAssistHistoryMessage(role: .assistant,
@@ -98,7 +111,7 @@ let answer = result.answer
 // handle answer
 ```
 ```objectivec
-NSString *smartChatAssistantId = @"6633a1300fea600001bd6e7";
+NSString *smartChatAssistantId = @"65d5f3473d5d68095462165d";
 NSString *messageToAssist = @"What is Quickblox?";
     
 NSArray *history = @[
@@ -128,7 +141,7 @@ QuickBlox offers translation functionality that helps users easily translate tex
 ### How to use AI Translate
 
 ```swift
-let smartChatAssistantId = "6633a1300fea600001bd6e7"
+let smartChatAssistantId = "65d5f3473d5d68095462165d"
 let textToTranslate = "Hola!"
 let languageCode = "en"
 
@@ -143,7 +156,7 @@ let answer = result.answer
 // handle answer
 ```
 ```objectivec
-NSString *smartChatAssistantId = @"6633a1300fea600001bd6e7";
+NSString *smartChatAssistantId = @"65d5f3473d5d68095462165d";
 NSString *textToTranslate = @"Hola!";
 NSString *languageCode = @"en";
     
@@ -160,19 +173,6 @@ NSString *languageCode = @"en";
 | smartChatAssistantId | String  | This field should hold your actual Smart Chat Assistant ID that you'll receive from the Quickblox account. This ID is used to authenticate your requests to the AI service. |
 | textToTranslate      | String  | Text to translate.                                                                                                                                                          |
 | languageCode         | Stringt | Translation language code.                                                                                                                                                  |
-
-# Install
-
-QuickBlox iOS SDK is available using the [Swift Package Manager](https://www.swift.org/package-manager/) (SPM) as of version 2.19.0.
-
-To add QuickBlox IOS SDK to your project using SPM, you can follow these steps:
-
-1. Open your Xcode project and navigate to File > Swift Packages > Add Package Dependency.
-2. In the search bar, enter the QuickBlox repository URL: https://github.com/QuickBlox/ios-quickblox-sdk.git  and click Add Package.
-3. Xcode will then fetch the QuickBlox iOS SDK and you can add it to your project by clicking Add Package.
-4. You can then import QuickBlox modules into your code and use its API.
-
-For more information on spm customization options, you can refer to the [Apple Documentation](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
 # Requirements
 
