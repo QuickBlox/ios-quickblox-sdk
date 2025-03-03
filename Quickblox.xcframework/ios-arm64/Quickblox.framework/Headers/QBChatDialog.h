@@ -137,6 +137,60 @@ typedef void(^QBOnlineUsersBlock)(NSMutableArray <NSNumber *> * _Nullable online
  */
 @property (strong, nonatomic, nullable) NSArray<NSString *> *pullOccupantsIDs;
 
+
+/// Indicates whether the join and leave methods must be used to send and receive messages in the dialog.
+/// This property applies only to dialogs of type ``QBChatDialogTypeGroup`` (see ``QBChatDialogType`` enum).
+///
+/// - If set to `YES`, the `join` and `leave` methods must be explicitly used to enable message exchange in the dialog.
+/// - If set to `NO`, the dialog does not require joining or leaving to send or receive messages.
+///
+/// This property must be set before creating the dialog using the API. If not specified, the server determines the value and returns it in the created dialog.
+///
+/// ## Objective-C
+/// ```objc
+/// QBChatDialog *chatDialog = [QBChatDialog create:QBChatDialogTypeGroup];
+/// chatDialog.isJoinRequired = NO;
+/// chatDialog.name = @"Group dialog name";
+/// chatDialog.occupantIDs = @[@34, @45, @55];
+/// [QBRequest createDialog:chatDialog completion:^(QBChatDialog * _Nullable createdDialog, NSError * _Nullable error) {
+///     if (error) {
+///         NSLog(@"Error: %@", error.localizedDescription);
+///     } else {
+///         NSLog(@"Dialog created successfully: %@", createdDialog);
+///     }
+/// }];
+/// ```
+///
+/// ## Swift
+/// ```swift
+/// let chatDialog = QBChatDialog.create(.group)
+/// chatDialog.isJoinRequired = false
+/// chatDialog.name = "Group dialog name"
+/// chatDialog.occupantIDs = [34, 45, 55]
+/// QBRequest.createDialog(chatDialog) { createdDialog, error in
+///     if let error = error {
+///         print("Error: \(error.localizedDescription)")
+///     } else {
+///         print("Dialog created successfully: \(String(describing: createdDialog))")
+///     }
+/// }
+/// ```
+///
+/// ## Swift with Async/Await
+/// ```swift
+/// let chatDialog = QBChatDialog.create(.group)
+/// chatDialog.isJoinRequired = false
+/// chatDialog.name = "Group dialog name"
+/// chatDialog.occupantIDs = [34, 45, 55]
+/// do {
+///     let createdDialog = try await QBRequest.createDialog(chatDialog)
+///     print("Dialog created successfully: \(String(describing: createdDialog))")
+/// } catch {
+///     print("Error: \(error.localizedDescription)")
+/// }
+/// ```
+@property (assign, nonatomic) BOOL isJoinRequired;
+
 /**
  Called whenever sent message was blocked on server.
  */
@@ -212,27 +266,92 @@ typedef void(^QBOnlineUsersBlock)(NSMutableArray <NSNumber *> * _Nullable online
  */
 - (void)sendGroupChatMessageWithoutJoin:(QBChatMessage *)message completion:(nullable QBChatCompletionBlock)completion;
 
-//MARK: - Join/leave
+//MARK: - Join/Leave
 
-/**
- Join status of the room
- 
- @return YES if user is joined to room, otherwise - no.
- */
+/// Determines if the user is currently joined to the dialog.
+///
+/// Applicable only for dialogs of type `QBChatDialogTypeGroup` and `QBChatDialogTypePublicGroup`.
+///
+/// @return `YES` if the user is joined to the dialog; otherwise, `NO`.
 - (BOOL)isJoined;
 
-/**
- Join to room.
- 
- @param completion  Completion block with failure error.
- */
+/// Joins the specified dialog, allowing the user to send and receive messages in real-time.
+///
+/// This method is intended for `QBChatDialogTypeGroup` and `QBChatDialogTypePublicGroup` dialogs. For `QBChatDialogTypeGroup` dialogs, this method is unnecessary if the dialog's `isJoinRequired` property is `NO`.
+///
+/// ## Objective-C
+/// ```objc
+/// [chatDialog joinWithCompletionBlock:^(NSError * _Nullable error) {
+///     if (error) {
+///         NSLog(@"Error joining dialog: %@", error.localizedDescription);
+///     } else {
+///         NSLog(@"Successfully joined the dialog");
+///     }
+/// }];
+/// ```
+///
+/// ## Swift
+/// ```swift
+/// chatDialog.join { error in
+///     if let error = error {
+///         print("Error joining dialog: \(error.localizedDescription)")
+///     } else {
+///         print("Successfully joined the dialog")
+///     }
+/// }
+/// ```
+///
+/// ## Swift with Async/Await
+/// ```swift
+/// do {
+///     try await chatDialog.join()
+///     print("Successfully joined the dialog")
+/// } catch {
+///     print("Error joining dialog: \(error.localizedDescription)")
+/// }
+/// ```
+///
+/// @param completion A block executed after the operation is completed. If an error occurs, it provides an error object.
 - (void)joinWithCompletionBlock:(nullable QBChatCompletionBlock)completion;
 
-/**
- Leave joined room.
- 
- @param completion  Completion block with failure error.
- */
+/// Leaves the specified dialog, preventing the user from sending or receiving messages.
+///
+/// To resume message exchange, the user must rejoin the dialog.
+/// This method applies to `QBChatDialogTypeGroup` and `QBChatDialogTypePublicGroup` dialogs. For `QBChatDialogTypeGroup` dialogs, it is unnecessary if the dialog's `isJoinRequired` property is `NO`.
+///
+/// ## Objective-C
+/// ```objc
+/// [chatDialog leaveWithCompletionBlock:^(NSError * _Nullable error) {
+///     if (error) {
+///         NSLog(@"Error leaving dialog: %@", error.localizedDescription);
+///     } else {
+///         NSLog(@"Successfully left the dialog");
+///     }
+/// }];
+/// ```
+///
+/// ## Swift
+/// ```swift
+/// chatDialog.leave { error in
+///     if let error = error {
+///         print("Error leaving dialog: \(error.localizedDescription)")
+///     } else {
+///         print("Successfully left the dialog")
+///     }
+/// }
+/// ```
+///
+/// ## Swift with Async/Await
+/// ```swift
+/// do {
+///     try await chatDialog.leave()
+///     print("Successfully left the dialog")
+/// } catch {
+///     print("Error leaving dialog: \(error.localizedDescription)")
+/// }
+/// ```
+///
+/// @param completion A block executed after the operation is completed. If an error occurs, it provides an error object.
 - (void)leaveWithCompletionBlock:(nullable QBChatCompletionBlock)completion;
 
 /**
