@@ -290,7 +290,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EakkzxiXrINWg2jo+X+ibN9/g3g=
+		Lb3cglFAVNrufKsOAOo7OrRzOgE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -298,7 +298,7 @@
 		</data>
 		<key>XMPPCapabilities.mom</key>
 		<data>
-		SfmXQFbjvZHBxPxwaC4Cpn4UIXU=
+		nAtD3UNXLM1sPmisN7ZjiNv4XBs=
 		</data>
 		<key>XMPPMessageArchiving.momd/VersionInfo.plist</key>
 		<data>
@@ -306,7 +306,7 @@
 		</data>
 		<key>XMPPMessageArchiving.momd/XMPPMessageArchiving.mom</key>
 		<data>
-		88gZ33CuAFSZwnKBJLqlZYASWKo=
+		yDE3bUGTt3FTnnD3JrEbqiXCYVI=
 		</data>
 		<key>XMPPMessageArchiving.momd/XMPPMessageArchiving.omo</key>
 		<data>
@@ -318,7 +318,7 @@
 		</data>
 		<key>XMPPRoom.momd/XMPPRoom.mom</key>
 		<data>
-		Y+GWWUFNqE7GuCsh8z5fY1p7n+s=
+		0hlXmrjpaV2UJLk0LJHfgK/suIs=
 		</data>
 		<key>XMPPRoom.momd/XMPPRoom.omo</key>
 		<data>
@@ -330,7 +330,7 @@
 		</data>
 		<key>XMPPRoomHybrid.momd/XMPPRoomHybrid.mom</key>
 		<data>
-		L3vT0Zz2P4IXKijYAuZioDDzVdk=
+		dHBhEkLxSvVs7rZGnKVF/NY0gXw=
 		</data>
 		<key>XMPPRoomHybrid.momd/XMPPRoomHybrid.omo</key>
 		<data>
@@ -338,7 +338,7 @@
 		</data>
 		<key>XMPPRoster.mom</key>
 		<data>
-		zYhHGD8c4v3lVvL1nKNeRsLPXRY=
+		c3K6fcHI9MPL/+HtaMyaDn8yV2Y=
 		</data>
 		<key>XMPPvCard.momd/VersionInfo.plist</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>XMPPvCard.momd/XMPPvCard.mom</key>
 		<data>
-		D/kTUPzThqW630PymSzAupmpmVc=
+		/lzNbyJSiYKQ1NeaKTOsY+VlOvM=
 		</data>
 		<key>XMPPvCard.momd/XMPPvCard.omo</key>
 		<data>
@@ -863,7 +863,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8OL2YEGC2EBqbom/g1jVvqvc4Jo8dIedQpaKUBb5nT0=
+			IzRw/hrC9VW46kfxBkXe1IGP4pxbYIp0b6HjMzIfELM=
 			</data>
 		</dict>
 		<key>XMPPMessageArchiving.momd/VersionInfo.plist</key>
@@ -877,7 +877,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jzLtAVKa57e8VZcVwSDBjtWHIFCNsphEnHcoR/hUM8o=
+			r7MnZGJlx+AbkP3DjY9achonJ10nbej1tCqPQtx1lWE=
 			</data>
 		</dict>
 		<key>XMPPMessageArchiving.momd/XMPPMessageArchiving.omo</key>
@@ -898,7 +898,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c5DZfQNM4QV8VwIlELGWARICORjydFZwdBN+kBdvX08=
+			JFafZfRuPrTwZgWC2WSTMMusvCPwNH45My34g4hVsCE=
 			</data>
 		</dict>
 		<key>XMPPRoom.momd/XMPPRoom.omo</key>
@@ -919,7 +919,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7VG/aFUXV+v4jobsZfvJBJVYHizX/x+T/81e2QoJTG0=
+			npW54H3g8jLhcPnrPt6dE944Fcadq+ESs+k+TAsjnGQ=
 			</data>
 		</dict>
 		<key>XMPPRoomHybrid.momd/XMPPRoomHybrid.omo</key>
@@ -933,7 +933,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1xWzsHluZtoPZ1SFcEP8BxE+Y2H4mYzQlciEmPKsik0=
+			Me7kL0snbNdmwrI07vqxbTgJdpEtS9fAQNaO/x9r2Zk=
 			</data>
 		</dict>
 		<key>XMPPvCard.momd/VersionInfo.plist</key>
@@ -947,7 +947,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9PdobcKRGyLNFFR138irtpeMW60PVxC029S1Q07X0f0=
+			jLUZQFNmnuCfwFOvBm2mTgyQMwdQWjXQ/w/ja3Z9bfs=
 			</data>
 		</dict>
 		<key>XMPPvCard.momd/XMPPvCard.omo</key>
