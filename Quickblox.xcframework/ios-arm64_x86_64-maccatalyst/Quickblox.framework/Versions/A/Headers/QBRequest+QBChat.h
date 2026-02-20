@@ -80,6 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)deleteDialogsWithIDs:(NSSet<NSString *> *)dialogIDs
                  forAllUsers:(BOOL)forAllUsers
                   completion:(qb_response_delete_dialog_completion_t)completion;
+
 /**
  Delete dialogs
  
@@ -214,6 +215,15 @@ NS_ASSUME_NONNULL_BEGIN
                           dialogID:(NSString *)dialogID
                       successBlock:(nullable qb_response_block_t)successBlock
                         errorBlock:(nullable qb_response_block_t)errorBlock;
+
+/// Delete existent chat messages completely for all users
+/// @param messageIDs The IDs of messages to delete.
+/// @param forAllUsers Delete message for the current user or remove it for all users.
+/// @param completion A block called upon completion of the operation.
+///        - `error`: An error object describing the failure, or `nil` if the operation succeeded.
++ (void)deleteMessagesWithIDs:(NSSet<NSString *> *)messageIDs
+                         forAllUsers:(BOOL)forAllUsers
+                          completion:(void (^)(NSError * _Nullable error))completion;
 
 /**
  Delete existent chat messages completely for all users

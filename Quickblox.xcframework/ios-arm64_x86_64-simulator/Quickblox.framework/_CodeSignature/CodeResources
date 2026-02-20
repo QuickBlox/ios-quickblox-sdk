@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/QBChatDialog.h</key>
 		<data>
-		b+OJ2AsY2+FwAuGqJDQXFsNnKQw=
+		DP8L/9Q+CtwpBjtNfwgmxvDs5HE=
 		</data>
 		<key>Headers/QBChatMessage.h</key>
 		<data>
@@ -230,7 +230,7 @@
 		</data>
 		<key>Headers/QBRequest+QBChat.h</key>
 		<data>
-		BjLs88Z+0iPtYIErDhoABPCA1os=
+		Am4o4ygAnu2gvNpgcM7FTnKXGAU=
 		</data>
 		<key>Headers/QBRequest+QBContent.h</key>
 		<data>
@@ -286,11 +286,11 @@
 		</data>
 		<key>Headers/Quickblox.h</key>
 		<data>
-		o3+fEivS3QFFD0iDDvR+Gefryzk=
+		+keth8h8cYHQVc9felxB31V8c6c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		clLQ4dkHF+Q+C/W/QpgTAykctl4=
+		Lb3cglFAVNrufKsOAOo7OrRzOgE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -298,7 +298,7 @@
 		</data>
 		<key>XMPPCapabilities.mom</key>
 		<data>
-		aPn4el2GYTBKGKW33LNe5ccfUo8=
+		nAtD3UNXLM1sPmisN7ZjiNv4XBs=
 		</data>
 		<key>XMPPMessageArchiving.momd/VersionInfo.plist</key>
 		<data>
@@ -306,7 +306,7 @@
 		</data>
 		<key>XMPPMessageArchiving.momd/XMPPMessageArchiving.mom</key>
 		<data>
-		MUscHEIXExevftE9KHAeMAhuXTA=
+		yDE3bUGTt3FTnnD3JrEbqiXCYVI=
 		</data>
 		<key>XMPPMessageArchiving.momd/XMPPMessageArchiving.omo</key>
 		<data>
@@ -318,7 +318,7 @@
 		</data>
 		<key>XMPPRoom.momd/XMPPRoom.mom</key>
 		<data>
-		IafLirPAANlJ+6KocZWsepXb4mg=
+		0hlXmrjpaV2UJLk0LJHfgK/suIs=
 		</data>
 		<key>XMPPRoom.momd/XMPPRoom.omo</key>
 		<data>
@@ -330,7 +330,7 @@
 		</data>
 		<key>XMPPRoomHybrid.momd/XMPPRoomHybrid.mom</key>
 		<data>
-		y4UdjXagx3A76E2wo2Adatru8/M=
+		dHBhEkLxSvVs7rZGnKVF/NY0gXw=
 		</data>
 		<key>XMPPRoomHybrid.momd/XMPPRoomHybrid.omo</key>
 		<data>
@@ -338,7 +338,7 @@
 		</data>
 		<key>XMPPRoster.mom</key>
 		<data>
-		em2/NXJKkKTl9GN5inKsscMXXbM=
+		c3K6fcHI9MPL/+HtaMyaDn8yV2Y=
 		</data>
 		<key>XMPPvCard.momd/VersionInfo.plist</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>XMPPvCard.momd/XMPPvCard.mom</key>
 		<data>
-		XjXQEg7PUol6VyuWfgac/B1/RE4=
+		/lzNbyJSiYKQ1NeaKTOsY+VlOvM=
 		</data>
 		<key>XMPPvCard.momd/XMPPvCard.omo</key>
 		<data>
@@ -548,7 +548,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lz+Bl5dB1B7Fa6Po0zB8rVUSu6Ir/FKAQaoGefMn67U=
+			aCXf76Jno73rv7831Ip5t6JAwGiQ/o73fdZlk4mWZQc=
 			</data>
 		</dict>
 		<key>Headers/QBChatMessage.h</key>
@@ -751,7 +751,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gaL0NHqdwE6Gdd0YUQNRMTelwrnX6/CCjkoqIEHwNCc=
+			BsdDMoyv4YO3CTms01DsDgG+FcU/FxGgS1KLFmMyNWs=
 			</data>
 		</dict>
 		<key>Headers/QBRequest+QBContent.h</key>
@@ -849,7 +849,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			87WnVE7ODsC/FEjMtZW4j+dyx4WeWZfMUTry8wF3bYU=
+			UhjS5ce4KN2NFH7LApLMI2GqFQiE0eSUZmvrzx7dGfU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -863,7 +863,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3uSs2+JHUM97Ze6QXaisY1h2sLkqtAbZ1IbkMJ6uqxE=
+			IzRw/hrC9VW46kfxBkXe1IGP4pxbYIp0b6HjMzIfELM=
 			</data>
 		</dict>
 		<key>XMPPMessageArchiving.momd/VersionInfo.plist</key>
@@ -877,7 +877,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ConTlDyaHUEkUBM8jy8lg5tLTT4GRWFL8o211taisw8=
+			r7MnZGJlx+AbkP3DjY9achonJ10nbej1tCqPQtx1lWE=
 			</data>
 		</dict>
 		<key>XMPPMessageArchiving.momd/XMPPMessageArchiving.omo</key>
@@ -898,7 +898,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KWfAt9yqaKv2RnMmswuBtIRXPdjKouVchaMq9oNBHT8=
+			JFafZfRuPrTwZgWC2WSTMMusvCPwNH45My34g4hVsCE=
 			</data>
 		</dict>
 		<key>XMPPRoom.momd/XMPPRoom.omo</key>
@@ -919,7 +919,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QidynFIuUHEy3pd2K18E0Tr3ruMd558Rakx+oIJbjw8=
+			npW54H3g8jLhcPnrPt6dE944Fcadq+ESs+k+TAsjnGQ=
 			</data>
 		</dict>
 		<key>XMPPRoomHybrid.momd/XMPPRoomHybrid.omo</key>
@@ -933,7 +933,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2MEjYFeWr+WD5JulwoHzX/Zg6k1SbxBw510rAQgkt5A=
+			Me7kL0snbNdmwrI07vqxbTgJdpEtS9fAQNaO/x9r2Zk=
 			</data>
 		</dict>
 		<key>XMPPvCard.momd/VersionInfo.plist</key>
@@ -947,7 +947,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GrjQzTLSVuXWzqmjz9xfdln6xcp9tuEMLBnH4FsPdvA=
+			jLUZQFNmnuCfwFOvBm2mTgyQMwdQWjXQ/w/ja3Z9bfs=
 			</data>
 		</dict>
 		<key>XMPPvCard.momd/XMPPvCard.omo</key>
