@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 @class QBChatAttachment;
+@class QBReaction;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -108,6 +109,12 @@ NS_ASSUME_NONNULL_BEGIN
  The array of user's ids who received this message.
  */
 @property (nonatomic, copy, nullable) NSArray<NSNumber *> *deliveredIDs;
+
+/// The reactions to this message.
+///
+/// An array of @c QBReaction objects, each representing a reaction type with its count
+/// and the user IDs who added that reaction. Empty when the message has no reactions.
+@property (nonatomic, copy) NSArray<QBReaction *> *reactions;
 
 /**
  Create new message.

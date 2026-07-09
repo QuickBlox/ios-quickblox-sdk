@@ -63,6 +63,15 @@ NS_ASSUME_NONNULL_BEGIN
                successBlock:(nullable qb_response_dialog_block_t)successBlock
                  errorBlock:(nullable qb_response_block_t)errorBlock;
 
+/// Update existing chat dialog.
+/// @param dialog The dialog instance to be updated.
+/// @param completion A block called upon completion of the operation.
+///        - `tDialog`: The updated dialog instance, or `nil` if an error occurred.
+///        - `error`: An error object describing the failure, or `nil` if the operation succeeded.
++ (void)updateDialog:(QBChatDialog *)dialog
+         completion:(void (^)(QBChatDialog * _Nullable tDialog,
+                              NSError * _Nullable error))completion;
+
 /// Deletes dialogs with specified IDs.
 ///
 /// @param dialogIDs A set of dialog IDs to delete.
@@ -119,6 +128,21 @@ NS_ASSUME_NONNULL_BEGIN
                      forPage:(nullable QBResponsePage *)page
                   completion:(nullable qb_response_messages_completion_t)completion;
 
+/// Retrieve messages from a dialog, including their reactions.
+///
+/// This method fetches messages for the specified dialog with reaction data populated for each message. By default, all retrieved messages are marked as read.
+///
+/// @param dialogID The unique identifier of the dialog whose messages to retrieve.
+/// @param extendedParameters Optional dictionary of additional query parameters. For example, pass @{ @"mark_as_read": @"0" } to prevent marking retrieved messages as read. Pass nil to use defaults.
+/// @param page Optional QBResponsePage specifying pagination (limit and skip). Pass nil for default pagination.
+/// @param completion Block invoked when the operation finishes. The block receives an array of QBChatMessage objects (each with a populated `reactions` property), a response page, and an error. The `error` is `nil` on success; otherwise it describes why the operation failed.
+///
+/// @note Reactions are not supported in public dialogs; this method fails if called for a public dialog.
++ (void)messagesIncludingReactionsWithDialogId:(NSString *)dialogId
+                               extendedRequest:(nullable NSDictionary<NSString *, NSString *> *)extendedParameters
+                                       forPage:(nullable QBResponsePage *)page
+                                    completion:(nullable qb_response_messages_completion_t)completion;
+
 /**
  Retrieve chat messages within particular dialog for page.
  
@@ -153,6 +177,15 @@ NS_ASSUME_NONNULL_BEGIN
 + (QBRequest *)createMessage:(QBChatMessage *)message
                 successBlock:(nullable qb_response_message_block_t)successBlock
                   errorBlock:(nullable qb_response_block_t)errorBlock;
+
+/// Create and send message to chat.
+/// @param message The message instance to be created.
+/// @param completion A block called upon completion of the operation.
+///        - `tMessage`: The created message instance, or `nil` if an error occurred.
+///        - `error`: An error object describing the failure, or `nil` if the operation succeeded.
++ (void)sendMessage:(QBChatMessage *)message
+         completion:(void (^)(QBChatMessage * _Nullable tMessage,
+                              NSError * _Nullable error))completion;
 
 /**
  Create and send message to chat.
@@ -215,6 +248,17 @@ NS_ASSUME_NONNULL_BEGIN
                           dialogID:(NSString *)dialogID
                       successBlock:(nullable qb_response_block_t)successBlock
                         errorBlock:(nullable qb_response_block_t)errorBlock;
+
+/// Update message text..
+/// @param messageId The identifier of message to be updated.
+/// @param text The message text to be updated.
+/// @param dialogId The identifier of dialog to which the message belongs.
+/// @param completion A block called upon completion of the operation.
+///        - `error`: An error object describing the failure, or `nil` if the operation succeeded.
++ (void)updateMessageWithId:(NSString *)messageId
+                       text:(NSString *)text
+                   dialogId:(NSString *)dialogId
+                 completion:(void (^)(NSError * _Nullable error))completion;
 
 /// Delete existent chat messages completely for all users
 /// @param messageIDs The IDs of messages to delete.

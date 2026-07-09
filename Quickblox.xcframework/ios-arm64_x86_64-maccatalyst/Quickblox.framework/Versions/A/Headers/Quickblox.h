@@ -77,12 +77,16 @@
 #import <QuickBlox/QBSettings.h>
 #import <QuickBlox/QBUpdateUserParameters.h>
 #import <QuickBlox/QBUUser.h>
+#import <Quickblox/QBReaction.h>
+#import <Quickblox/QBRequest+QBReaction.h>
+#import <Quickblox/QBReactionEvent.h>
 
 #import <Foundation/Foundation.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
-/// Framework version 2.22.0
+/// Framework version 2.23.0
 FOUNDATION_EXPORT NSString * const QuickbloxFrameworkVersion;
 
 @interface Quickblox : NSObject
