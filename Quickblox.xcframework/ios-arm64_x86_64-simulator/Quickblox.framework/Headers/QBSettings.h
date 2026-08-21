@@ -92,6 +92,9 @@ typedef NS_ENUM(NSUInteger, QBHashAlgorithm) {
 /** Enable or disable message carbons */
 @property (nonatomic, class) BOOL carbonsEnabled;
 
+/** Enable or disable notice */
+@property (nonatomic, class) BOOL noticeEnabled;
+
 /** Set timeout value for Stream Management send a message operation */
 @property (nonatomic, class) NSUInteger streamManagementSendMessageTimeout;
 

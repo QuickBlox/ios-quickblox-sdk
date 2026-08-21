@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/QBChatDelegate.h</key>
 		<data>
-		zxFtWEYM5hSqxwoC9YezsneBLbk=
+		11yIdEyj19VvHPk5HmZyxX9RCA0=
 		</data>
 		<key>Headers/QBChatDialog.h</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Headers/QBChatMessage.h</key>
 		<data>
-		ayg3Oi+0pgc9gY39aFQgrIvK6Fo=
+		aezIX4TdiBp8VJ3vhnc4nVhxppc=
 		</data>
 		<key>Headers/QBChatTypes.h</key>
 		<data>
@@ -212,6 +212,14 @@
 		<data>
 		hLADYOYOudikYpYJNpWlvd/D/nE=
 		</data>
+		<key>Headers/QBReaction.h</key>
+		<data>
+		+nIFgRD1eXDAPpxDC01iJLWsPLk=
+		</data>
+		<key>Headers/QBReactionEvent.h</key>
+		<data>
+		x7E7w4q/BEhnpSy44RCl2QMd4HE=
+		</data>
 		<key>Headers/QBRequest+AIAnswerAssist.h</key>
 		<data>
 		CICurPsa86jrYXuA8fbNR76BoLc=
@@ -230,7 +238,7 @@
 		</data>
 		<key>Headers/QBRequest+QBChat.h</key>
 		<data>
-		Am4o4ygAnu2gvNpgcM7FTnKXGAU=
+		JWNUv6iKX4P/ml/CBdI2SDP5r+E=
 		</data>
 		<key>Headers/QBRequest+QBContent.h</key>
 		<data>
@@ -243,6 +251,10 @@
 		<key>Headers/QBRequest+QBPushNotifications.h</key>
 		<data>
 		rvHQmmqWQGBNU9mkWqLd3165J1Y=
+		</data>
+		<key>Headers/QBRequest+QBReaction.h</key>
+		<data>
+		+cwJEahu87TTWnvQtKKHlC6oUTI=
 		</data>
 		<key>Headers/QBRequest+QBUsers.h</key>
 		<data>
@@ -274,7 +286,7 @@
 		</data>
 		<key>Headers/QBSettings.h</key>
 		<data>
-		Nlb8L02Lrkw+Vn1XasQPAoyCWYg=
+		gcafxv0RhXW8gqO/NlmnP/nt+wU=
 		</data>
 		<key>Headers/QBUUser.h</key>
 		<data>
@@ -286,11 +298,11 @@
 		</data>
 		<key>Headers/Quickblox.h</key>
 		<data>
-		+keth8h8cYHQVc9felxB31V8c6c=
+		7RSzDiL3LhiPjgdIA15IrX6TgRI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Lb3cglFAVNrufKsOAOo7OrRzOgE=
+		13j5xy9ua92Awe28D9xWVVEsxdE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -298,7 +310,7 @@
 		</data>
 		<key>XMPPCapabilities.mom</key>
 		<data>
-		nAtD3UNXLM1sPmisN7ZjiNv4XBs=
+		V9jEmtOL1QXMM6pc8NwhOocYDI0=
 		</data>
 		<key>XMPPMessageArchiving.momd/VersionInfo.plist</key>
 		<data>
@@ -306,7 +318,7 @@
 		</data>
 		<key>XMPPMessageArchiving.momd/XMPPMessageArchiving.mom</key>
 		<data>
-		yDE3bUGTt3FTnnD3JrEbqiXCYVI=
+		xJ2SAUblYbIe9PNGa2SXWV3yolw=
 		</data>
 		<key>XMPPMessageArchiving.momd/XMPPMessageArchiving.omo</key>
 		<data>
@@ -318,7 +330,7 @@
 		</data>
 		<key>XMPPRoom.momd/XMPPRoom.mom</key>
 		<data>
-		0hlXmrjpaV2UJLk0LJHfgK/suIs=
+		SCF83vY43NnzZMnPDKgljytX1R0=
 		</data>
 		<key>XMPPRoom.momd/XMPPRoom.omo</key>
 		<data>
@@ -330,7 +342,7 @@
 		</data>
 		<key>XMPPRoomHybrid.momd/XMPPRoomHybrid.mom</key>
 		<data>
-		dHBhEkLxSvVs7rZGnKVF/NY0gXw=
+		PQ+efcntpfuZl30Jnuo/44wH9C0=
 		</data>
 		<key>XMPPRoomHybrid.momd/XMPPRoomHybrid.omo</key>
 		<data>
@@ -338,7 +350,7 @@
 		</data>
 		<key>XMPPRoster.mom</key>
 		<data>
-		c3K6fcHI9MPL/+HtaMyaDn8yV2Y=
+		xxKrtQApnncshWDYHDBcmtKCvHU=
 		</data>
 		<key>XMPPvCard.momd/VersionInfo.plist</key>
 		<data>
@@ -346,7 +358,7 @@
 		</data>
 		<key>XMPPvCard.momd/XMPPvCard.mom</key>
 		<data>
-		/lzNbyJSiYKQ1NeaKTOsY+VlOvM=
+		PZkCpVFESzGOF0+aaE1Dde3FVAc=
 		</data>
 		<key>XMPPvCard.momd/XMPPvCard.omo</key>
 		<data>
@@ -541,7 +553,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			69usp0/8hzeN6OWo2bwae0saacGNwtNEJuXKnnRIKac=
+			fN5YohMPAWTAxqxVYrDVW3mzMlRB+olu0SnlWuNfNT4=
 			</data>
 		</dict>
 		<key>Headers/QBChatDialog.h</key>
@@ -555,7 +567,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9UQOzFQVYqO0YRjs/zx+Cc5lvGdyDEvfPZjbO9HYw7A=
+			PVoDoVtbW//DcZD0NGCELnPPOvaOZaUbJLDUeceppOk=
 			</data>
 		</dict>
 		<key>Headers/QBChatTypes.h</key>
@@ -719,6 +731,20 @@
 			/qaLPaKZ/prXQllvfbuPMGgb9nuX8PQ2ucYoYJGVdIQ=
 			</data>
 		</dict>
+		<key>Headers/QBReaction.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1NFeWnEis3bRvYRrs6wM3yrh5wRvSYMJSUZ3qwJ8egE=
+			</data>
+		</dict>
+		<key>Headers/QBReactionEvent.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZTevDd0A+TMMMSjQ9PoYeEPaoChI9e3ELZ8a1gGqwWk=
+			</data>
+		</dict>
 		<key>Headers/QBRequest+AIAnswerAssist.h</key>
 		<dict>
 			<key>hash2</key>
@@ -751,7 +777,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BsdDMoyv4YO3CTms01DsDgG+FcU/FxGgS1KLFmMyNWs=
+			yuJRY/nKhr+unuq+2CZN9EFKhr1mytuHmzTLfp4qdQ8=
 			</data>
 		</dict>
 		<key>Headers/QBRequest+QBContent.h</key>
@@ -773,6 +799,13 @@
 			<key>hash2</key>
 			<data>
 			id7ZgDHpGKsUq3PVyL3sTmEcN4RVWJBxYrnljuQHHIo=
+			</data>
+		</dict>
+		<key>Headers/QBRequest+QBReaction.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VnucCsEaxJ8KuywcDtIHe//6gvYQIAYqdVVuxYn7/Zo=
 			</data>
 		</dict>
 		<key>Headers/QBRequest+QBUsers.h</key>
@@ -828,7 +861,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uWzp5WFsDS2WPvac62QHV4iUzAzFZVRGJiUex//1u9I=
+			fGxj6ClnU2lhAndoYbnv+SEsBarYC60xU9RjMCO6LgU=
 			</data>
 		</dict>
 		<key>Headers/QBUUser.h</key>
@@ -849,7 +882,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UhjS5ce4KN2NFH7LApLMI2GqFQiE0eSUZmvrzx7dGfU=
+			2kQJc4IX9GWNx2RpMfgMG/QpJCuyqICGGcM3sbbhPcw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -863,7 +896,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IzRw/hrC9VW46kfxBkXe1IGP4pxbYIp0b6HjMzIfELM=
+			krW2iqnXKycLueqMyo4lTCy0T0zhFkzEOoab5uR2jI8=
 			</data>
 		</dict>
 		<key>XMPPMessageArchiving.momd/VersionInfo.plist</key>
@@ -877,7 +910,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r7MnZGJlx+AbkP3DjY9achonJ10nbej1tCqPQtx1lWE=
+			BSKPg1FcC+YJDMl44WghpLscFNn7552o0kZlkDcQK00=
 			</data>
 		</dict>
 		<key>XMPPMessageArchiving.momd/XMPPMessageArchiving.omo</key>
@@ -898,7 +931,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JFafZfRuPrTwZgWC2WSTMMusvCPwNH45My34g4hVsCE=
+			pOs5xcOotn0BXixpM/TMr4LwjPOhgdEux2o8ltaNLbU=
 			</data>
 		</dict>
 		<key>XMPPRoom.momd/XMPPRoom.omo</key>
@@ -919,7 +952,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			npW54H3g8jLhcPnrPt6dE944Fcadq+ESs+k+TAsjnGQ=
+			DewBnuV1KG09CQJ+qMeM6UmGiRXtqMdYnKVdISHVJ1U=
 			</data>
 		</dict>
 		<key>XMPPRoomHybrid.momd/XMPPRoomHybrid.omo</key>
@@ -933,7 +966,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Me7kL0snbNdmwrI07vqxbTgJdpEtS9fAQNaO/x9r2Zk=
+			lztxJbxPRXURkCghbzX37QGyPnmAlERFoqoGikTIQwk=
 			</data>
 		</dict>
 		<key>XMPPvCard.momd/VersionInfo.plist</key>
@@ -947,7 +980,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jLUZQFNmnuCfwFOvBm2mTgyQMwdQWjXQ/w/ja3Z9bfs=
+			6lf5w8VhEA5Hb9wvtAO/0Rf/MNUA2uxiirQ2jNCELNw=
 			</data>
 		</dict>
 		<key>XMPPvCard.momd/XMPPvCard.omo</key>

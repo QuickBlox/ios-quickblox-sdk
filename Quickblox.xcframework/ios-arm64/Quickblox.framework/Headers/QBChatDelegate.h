@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class QBContactList, QBChatMessage, QBPrivacyList, QBContactListItem;
+@class QBContactList, QBChatMessage, QBPrivacyList, QBContactListItem, QBChatDialog, QBReactionEvent;
 
 //MARK: - Manage chat connection callbacks
 
@@ -252,6 +252,56 @@ Called whenever you have failed to set a default privacy list.
 
 @end
 
+// MARK: - Chat changes
+
+@protocol QBChatChangesProtocol
+@optional
+
+/**
+ Called when a message is deleted from a dialog.
+
+ @param messageID The identifier of the deleted message.
+ @param dialogID  The identifier of the dialog from which the message was deleted.
+ */
+- (void)chatMessageDeletedWithID:(NSString *)messageID
+                        dialogID:(NSString *)dialogID;
+
+/**
+ Called when a message in a dialog has been updated.
+
+ @param message Updated message.
+ */
+- (void)chatMessageUpdated:(QBChatMessage *)message;
+
+/**
+ Called when a reaction is added to or removed from a message.
+ @note Each event represents a single reaction mutation. Apply these changes
+       incrementally to maintain the current reaction state.
+
+ @param event Reaction event containing the message ID, dialog ID, reaction name,
+              user ID, action (add or remove), and event timestamp.
+ */
+- (void)chatMessageReactionChanged:(QBReactionEvent *)event;
+
+/**
+ Called when a dialog has been deleted.
+ @note All occupants of the dialog receive this notification.
+
+ @param dialogID The identifier of the deleted dialog.
+ */
+- (void)chatDialogDeletedWithID:(NSString *)dialogID;
+
+/**
+ Called when a dialog has been updated.
+ @note The dialog contains all current fields, not just the changed ones,
+       ensuring full client-side synchronization.
+
+ @param dialog Updated dialog with all current fields.
+ */
+- (void)chatDialogUpdated:(QBChatDialog *)dialog;
+
+@end
+
 /**
  QBChatDelegate protocol definition.
  This protocol defines methods signatures for callbacks.
@@ -259,7 +309,7 @@ Called whenever you have failed to set a default privacy list.
  instance to receive callbacks from QBChat
  */
 @protocol QBChatDelegate <NSObject, QBChatConnectionProtocol, QBChatReceiveMessageProtocol,
-QBChatContactListProtocol, QBChatPrivacyProtocol, QBChatPresenceProtocol>
+QBChatContactListProtocol, QBChatPrivacyProtocol, QBChatPresenceProtocol, QBChatChangesProtocol>
 
 @end
 
