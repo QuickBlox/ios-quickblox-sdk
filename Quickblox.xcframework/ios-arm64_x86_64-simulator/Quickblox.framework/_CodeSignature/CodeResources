@@ -110,15 +110,15 @@
 		</data>
 		<key>Headers/QBChatDelegate.h</key>
 		<data>
-		11yIdEyj19VvHPk5HmZyxX9RCA0=
+		F8QR5wPCdLCz8LSmJ7twIynSJ5M=
 		</data>
 		<key>Headers/QBChatDialog.h</key>
 		<data>
-		DP8L/9Q+CtwpBjtNfwgmxvDs5HE=
+		z4vBoeF/UXGrwq9U92pYrEdSkbk=
 		</data>
 		<key>Headers/QBChatMessage.h</key>
 		<data>
-		aezIX4TdiBp8VJ3vhnc4nVhxppc=
+		51x+LGdpqi9RCwNo7h1+wVuYrkY=
 		</data>
 		<key>Headers/QBChatTypes.h</key>
 		<data>
@@ -238,7 +238,7 @@
 		</data>
 		<key>Headers/QBRequest+QBChat.h</key>
 		<data>
-		JWNUv6iKX4P/ml/CBdI2SDP5r+E=
+		vwuDikbM81WLRtKhesndm7yAlcI=
 		</data>
 		<key>Headers/QBRequest+QBContent.h</key>
 		<data>
@@ -298,11 +298,11 @@
 		</data>
 		<key>Headers/Quickblox.h</key>
 		<data>
-		7RSzDiL3LhiPjgdIA15IrX6TgRI=
+		eYlKpKZGeKvOv89yNuv5naG3Gto=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		13j5xy9ua92Awe28D9xWVVEsxdE=
+		AZUxNUsNm9P6B/0RarMJRn/yEzc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -553,21 +553,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fN5YohMPAWTAxqxVYrDVW3mzMlRB+olu0SnlWuNfNT4=
+			IqEl4ixZaR6/fYQlIrRBDTCl3lJBLlzRoGktb9n7cXw=
 			</data>
 		</dict>
 		<key>Headers/QBChatDialog.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aCXf76Jno73rv7831Ip5t6JAwGiQ/o73fdZlk4mWZQc=
+			4RZvFaI11Hputb1LS6VF39wxuvz7dGF5tyRUdU40hl0=
 			</data>
 		</dict>
 		<key>Headers/QBChatMessage.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PVoDoVtbW//DcZD0NGCELnPPOvaOZaUbJLDUeceppOk=
+			SgCZhI3rtyDplj9dUD5TrjIVeZd4TChJUQcfxPxUPJ8=
 			</data>
 		</dict>
 		<key>Headers/QBChatTypes.h</key>
@@ -777,7 +777,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yuJRY/nKhr+unuq+2CZN9EFKhr1mytuHmzTLfp4qdQ8=
+			0mVEEL75/hZClOqx7bfvVE8tT9LZgKGXngUS6by0sw4=
 			</data>
 		</dict>
 		<key>Headers/QBRequest+QBContent.h</key>
@@ -882,7 +882,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2kQJc4IX9GWNx2RpMfgMG/QpJCuyqICGGcM3sbbhPcw=
+			Ggvfk7v0rv0W2hTS1iMplzq4nhpQvwJ6h5nnhlCRbIg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

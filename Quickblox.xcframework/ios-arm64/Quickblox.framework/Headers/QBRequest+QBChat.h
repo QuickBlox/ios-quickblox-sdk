@@ -143,6 +143,30 @@ NS_ASSUME_NONNULL_BEGIN
                                        forPage:(nullable QBResponsePage *)page
                                     completion:(nullable qb_response_messages_completion_t)completion;
 
+/// Retrieve a message by its ID.
+///
+/// Fetches a single chat message identified by the provided message ID.
+///
+/// @param messageId The unique identifier of the message to retrieve. Must not be empty.
+/// @param completion Block invoked when the operation finishes. The block receives a QBChatMessage object and an error. The `error` is `nil` on success; otherwise it describes why the operation failed.
+///
+/// @note This method does not include reactions in the response. To retrieve a message with reactions, use `messageIncludingReactionsWithId:completion:`.
++ (void)messageWithId:(NSString *)messageId
+           completion:(void (^)(QBChatMessage * _Nullable message,
+                                NSError * _Nullable error))completion;
+
+/// Retrieve a message by its ID, including its reactions.
+///
+/// Fetches a single chat message with reaction data populated. This is equivalent to calling the API with the `include_reactions=1` parameter.
+///
+/// @param messageId The unique identifier of the message to retrieve. Must not be empty.
+/// @param completion Block invoked when the operation finishes. The block receives a QBChatMessage object (with a populated `reactions` array) and an error. The `error` is `nil` on success; otherwise it describes why the operation failed.
+///
+/// @note Reactions are not supported in public dialogs. If the message belongs to a public dialog, this method may fail.
++ (void)messageIncludingReactionsWithId:(NSString *)messageId
+                             completion:(void (^)(QBChatMessage * _Nullable message,
+                                                  NSError * _Nullable error))completion;
+
 /**
  Retrieve chat messages within particular dialog for page.
  

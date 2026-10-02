@@ -101,6 +101,21 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) NSDate *updatedAt;
 
 /**
+ The date when the message was edited.
+ */
+@property (nonatomic, strong, nullable) NSDate *editedAt;
+
+/**
+ The ID of the user who edited the message.
+ */
+@property (nonatomic, assign) NSUInteger editorID;
+
+/**
+ Determines whether the message has been edited.
+ */
+@property (nonatomic, assign) BOOL isEdited;
+
+/**
  The array of user's ids who read this message.
  */
 @property (nonatomic, copy, nullable) NSArray<NSNumber *> *readIDs;

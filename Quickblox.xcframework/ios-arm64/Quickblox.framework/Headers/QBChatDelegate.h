@@ -284,6 +284,15 @@ Called whenever you have failed to set a default privacy list.
 - (void)chatMessageReactionChanged:(QBReactionEvent *)event;
 
 /**
+ Called when a new dialog has been created.
+ @note Sent only when a Group or Private dialog is created. Not sent for Public dialogs.
+       The dialog contains all fields available at creation time.
+
+ @param dialog Created dialog with all available fields.
+ */
+- (void)chatDialogCreated:(QBChatDialog *)dialog;
+
+/**
  Called when a dialog has been deleted.
  @note All occupants of the dialog receive this notification.
 

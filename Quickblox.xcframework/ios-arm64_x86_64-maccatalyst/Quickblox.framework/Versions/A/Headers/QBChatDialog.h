@@ -107,6 +107,13 @@ typedef void(^QBOnlineUsersBlock)(NSMutableArray <NSNumber *> * _Nullable online
 @property (nonatomic, copy, nullable) NSArray<NSNumber *> *occupantIDs;
 
 /**
+ The Array of admin user IDs in the dialog.
+ 
+ @note Only applicable to Group (type 2) and Public (type 1) dialogs. Always empty for Private dialogs (type 3).
+ */
+@property (nonatomic, copy, nullable) NSArray<NSNumber *> *adminIDs;
+
+/**
  The dictionary that represents the custom data.
  
  @see https://quickblox.com/developers/SimpleSample-chat_users-ios#Custom_parameters
@@ -137,6 +144,19 @@ typedef void(^QBOnlineUsersBlock)(NSMutableArray <NSNumber *> * _Nullable online
  */
 @property (strong, nonatomic, nullable) NSArray<NSString *> *pullOccupantsIDs;
 
+/**
+ The Admin IDs to be added to the dialog during update.
+ 
+ @note Set this property before calling update to add new admins. Only applicable to Group and Public dialogs.
+ */
+@property (strong, nonatomic, nullable) NSArray<NSString *> *pushAdminIDs;
+
+/**
+ The Admin IDs to be removed from the dialog during update.
+ 
+ @note Set this property before calling update to remove admins. Only applicable to Group and Public dialogs.
+ */
+@property (strong, nonatomic, nullable) NSArray<NSString *> *pullAdminIDs;
 
 /// Indicates whether the join and leave methods must be used to send and receive messages in the dialog.
 /// This property applies only to dialogs of type ``QBChatDialogTypeGroup`` (see ``QBChatDialogType`` enum).
