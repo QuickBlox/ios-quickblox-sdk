@@ -136,25 +136,29 @@ typedef void(^QBOnlineUsersBlock)(NSMutableArray <NSNumber *> * _Nullable online
 
 /**
  The Occupants (users) ids to be pushed (added) to the dialog.
+ 
+ @note If this property is set, `pullOccupantsIDs` will be ignored. You can either add or remove occupants in a single update, not both.
  */
 @property (strong, nonatomic, nullable) NSArray<NSString *> *pushOccupantsIDs;
 
 /**
  The Occupants (users) ids to be pulled (removed) from the dialog.
+ 
+ @note If `pushOccupantsIDs` is set, this property will be ignored. You can either add or remove occupants in a single update, not both.
  */
 @property (strong, nonatomic, nullable) NSArray<NSString *> *pullOccupantsIDs;
 
 /**
  The Admin IDs to be added to the dialog during update.
  
- @note Set this property before calling update to add new admins. Only applicable to Group and Public dialogs.
+ @note If this property is set, `pullAdminIDs` will be ignored. You can either add or remove admins in a single update, not both. Only applicable to Group and Public dialogs.
  */
 @property (strong, nonatomic, nullable) NSArray<NSString *> *pushAdminIDs;
 
 /**
  The Admin IDs to be removed from the dialog during update.
  
- @note Set this property before calling update to remove admins. Only applicable to Group and Public dialogs.
+ @note If `pushAdminIDs` is set, this property will be ignored. You can either add or remove admins in a single update, not both. Only applicable to Group and Public dialogs.
  */
 @property (strong, nonatomic, nullable) NSArray<NSString *> *pullAdminIDs;
 
